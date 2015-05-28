@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IndiLauncherMainWindow</class>
+ <widget class="QMainWindow" name="IndiLauncherMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>748</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IndiLauncher</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="4">
+     <widget class="QPlainTextEdit" name="txt_console">
+      <property name="minimumSize">
+       <size>
+        <width>450</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255,255,255);
+font-family: monospace;
+font-size: 10pt;</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <layout class="QVBoxLayout" name="lyt_finalactions">
+      <item>
+       <widget class="QPushButton" name="btn_indiserver">
+        <property name="statusTip">
+         <string>Lancer INDI Server avec les pilotes sélectionnés</string>
+        </property>
+        <property name="text">
+         <string>&amp;Lancer INDI Server</string>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+S</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="lyt_USBactions">
+      <item>
+       <widget class="QPushButton" name="btn_listUSB">
+        <property name="text">
+         <string>Lister les périphériques &amp;USB</string>
+        </property>
+        <property name="shortcut">
+         <string>Alt+U</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_saveUSB">
+        <property name="statusTip">
+         <string>Enregistre le résultat de la commence lsusb dans un fichier</string>
+        </property>
+        <property name="text">
+         <string>&amp;Sauvegarder la liste...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QFormLayout" name="lyt_driverform">
+      <item row="0" column="0">
+       <widget class="QLabel" name="lbl_telescope">
+        <property name="text">
+         <string>Téléscope</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="cb_telescope">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lbl_ccdapn">
+        <property name="text">
+         <string>CCD/APN</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="cb_ccdapn">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lbl_guide">
+        <property name="text">
+         <string>Guidage</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="cb_guide">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="lbl_focuser">
+        <property name="text">
+         <string>Focuser</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="cb_focuser">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="lbl_joystick">
+        <property name="text">
+         <string>Joystick</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="cb_joystick">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="lbl_aux1">
+        <property name="text">
+         <string>Aux 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="cb_aux1">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="lbl_aux2">
+        <property name="text">
+         <string>Aux 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="cb_aux2">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="lbl_aux3">
+        <property name="text">
+         <string>Aux 3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="cb_aux3">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>748</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Fichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <addaction name="act_nightmode"/>
+    <addaction name="separator"/>
+    <addaction name="act_quitter"/>
+   </widget>
+   <addaction name="menu_Fichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="act_quitter">
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+   <property name="statusTip">
+    <string>Quitter l'application</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="act_nightmode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Mode &amp;Nuit</string>
+   </property>
+   <property name="statusTip">
+    <string>Change les couleurs de l'interface</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>btn_listUSB</tabstop>
+  <tabstop>btn_saveUSB</tabstop>
+  <tabstop>cb_telescope</tabstop>
+  <tabstop>cb_ccdapn</tabstop>
+  <tabstop>cb_guide</tabstop>
+  <tabstop>cb_focuser</tabstop>
+  <tabstop>cb_joystick</tabstop>
+  <tabstop>cb_aux1</tabstop>
+  <tabstop>cb_aux2</tabstop>
+  <tabstop>cb_aux3</tabstop>
+  <tabstop>btn_indiserver</tabstop>
+  <tabstop>txt_console</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>act_quitter</sender>
+   <signal>triggered()</signal>
+   <receiver>IndiLauncherMainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
